@@ -106,15 +106,15 @@ void solve() {
         bst.postorder(bst.root, post);
 
         cout << "Case " << i + 1 << ":\n";
-        cout << "Pre.:";
+        cout << "Pre.: ";
         for (size_t j = 0; j < pre.size(); ++j) {
             cout << (j ? " " : "") << pre[j];
         }
-        cout << "\nIn..:";
+        cout << "\nIn..: ";
         for (size_t j = 0; j < in.size(); ++j) {
             cout << (j ? " " : "") << in[j];
         }
-        cout << "\nPost:";
+        cout << "\nPost: ";
         for (size_t j = 0; j < post.size(); ++j) {
             cout << (j ? " " : "") << post[j];
         }
@@ -130,6 +130,6 @@ int32_t main() { _
 	while (t--) {
 		solve();
 	}
-	cerr << fixed << "Run Time : " << ((double)(clock() - z) / CLOCKS_PER_SEC) << endl;
+	//cerr << fixed << "Run Time : " << ((double)(clock() - z) / CLOCKS_PER_SEC) << endl;
 	return 0;
 }
