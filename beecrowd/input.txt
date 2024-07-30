@@ -1,30 +1,189 @@
-6
-1 1
-1 2
-1 3
-2 1
-2 2
-2 3
-6
-1 1
-1 2
-1 3
-2 3
-2 2
-2 1
-2
-1 1
-2 2
-4
-1 2
-1 1
-2 1
-2 2
-7
-1 2
-1 5
-1 1
-1 3
-2 5
-1 4
-2 4
+94
+
+push_0
+
+pop_R0
+
+push_1
+
+pop_R1
+
+push_R0
+
+push_1
+
+add
+
+pop_R0
+
+push_R1
+
+push_R0
+
+mul
+
+pop_R1
+
+push_R1
+
+print
+
+push_R0
+
+push_1
+
+add
+
+pop_R0
+
+push_R1
+
+push_R0
+
+mul
+
+pop_R1
+
+push_R1
+
+print
+
+push_R0
+
+push_1
+
+add
+
+pop_R0
+
+push_R1
+
+push_R0
+
+mul
+
+pop_R1
+
+push_R1
+
+print
+
+push_R0
+
+push_1
+
+add
+
+pop_R0
+
+push_R1
+
+push_R0
+
+mul
+
+pop_R1
+
+push_R1
+
+print
+
+push_R0
+
+push_1
+
+add
+
+pop_R0
+
+push_R1
+
+push_R0
+
+mul
+
+pop_R1
+
+push_R1
+
+print
+
+push_R0
+
+push_1
+
+add
+
+pop_R0
+
+push_R1
+
+push_R0
+
+mul
+
+pop_R1
+
+push_R1
+
+print
+
+push_R0
+
+push_1
+
+add
+
+pop_R0
+
+push_R1
+
+push_R0
+
+mul
+
+pop_R1
+
+push_R1
+
+print
+
+push_R0
+
+push_1
+
+add
+
+pop_R0
+
+push_R1
+
+push_R0
+
+mul
+
+pop_R1
+
+push_R1
+
+print
+
+push_R0
+
+push_1
+
+add
+
+pop_R0
+
+push_R1
+
+push_R0
+
+mul
+
+pop_R1
+
+push_R1
+
+print
