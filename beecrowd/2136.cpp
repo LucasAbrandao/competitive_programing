@@ -25,10 +25,55 @@ const int MAX = 1e6+10; // 10^6 + 10
 
 
 
-
 void solve() {
-
+    unordered_map<string,int> ordem;
+    unordered_map<int,string> reveto;
+    unordered_map<int,unordered_set<string>> inscritos;
+    set<string> todosquer,todosnao;
+    int maior=0,count=1;
+    string name,quer;
+    while(cin>>name){
+        if(name.compare("FIM")==0)
+            break;
+        cin>>quer;
+        if(quer.compare("YES")==0){
+            todosquer.insert(name);
+            if(ordem[name]==0){
+                reveto[count]=name;
+                ordem[name]=count;
+                count++;
+                inscritos[name.size()].insert(name);
+                if(maior < name.size())
+                    maior = name.size();
+            }
+        }else{
+            todosnao.insert(name);
+        }
+        
+    }
+    for(auto at : todosquer){
+        cout<<at<<"\n";
+    }
+    for(auto at : todosnao){
+        cout<<at<<"\n";
+    }
+    cout<<"\nAmigo do Habay:\n";
+    if(inscritos[maior].size()==1){
+        for(auto at :inscritos[maior]){
+            cout<<at<<"\n";
+        }
+    }
+    else{
+        
+        int primeiro = INT16_MAX;
+        for(auto at : inscritos[maior]){
+            if(ordem[at] < primeiro)
+                primeiro = ordem[at];
+        }
+        cout<<reveto[primeiro]<<"\n";
+    }
 }
+
 
 
 int32_t main() { _
